@@ -1,17 +1,11 @@
-export EDITOR=nvim
-export VISUAL=nvim
-
-if [[ $- != *i* ]]
-then
-	return
-fi
+[[ $- != *i* ]] && return
 
 shopt -s checkwinsize
+shopt -s dotglob
 shopt -s histappend
 
-alias dotf='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+PS1='\[\e[96m\]\u\[\e[m\]@\[\e[94m\]\H\[\e[m\] \[\e[92m\]\w\[\e[m\] \$ '
 
-alias rm='rm -I'
 alias ls='ls -alh --color=always'
-
-PS1='\[\e[96m\]\u\[\e[m\]@\[\e[94m\]\h\[\e[m\] \[\e[92m\]\w\[\e[m\] \$ '
+alias rm='rm -rI'
+alias grep='grep --color=always'
