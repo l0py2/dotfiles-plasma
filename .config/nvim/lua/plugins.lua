@@ -20,8 +20,9 @@ require('lazy').setup({
 		{ import = 'plugins/mason' },
 		{ import = 'plugins/luasnip' },
 		{ import = 'plugins/cmp' },
-		{ import = 'plugins/telescope' },
 		{ import = 'plugins/lualine' },
+		{ import = 'plugins/telescope' },
+		{ import = 'plugins/tree' },
 		{ import = 'plugins/guess-indent' },
 		{ import = 'plugins/wiki' }
 	},
