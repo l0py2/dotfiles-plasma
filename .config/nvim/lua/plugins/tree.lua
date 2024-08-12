@@ -4,5 +4,15 @@ return {
 		vim.g.loaded_netrw = 1
 		vim.g.loaded_netrwPlugin = 1
 	end,
-	opts = {}
+	opts = {},
+	keys = {
+		{
+			'<leader>t',
+			function ()
+				require('nvim-tree.api').tree.toggle()
+			end,
+			mode = 'n'
+		}
+
+	}
 }

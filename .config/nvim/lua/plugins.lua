@@ -26,5 +26,5 @@ require('lazy').setup({
 		{ import = 'plugins/guess-indent' },
 		{ import = 'plugins/wiki' }
 	},
-	checker = { enabled = true }
+	checker = { enabled = false }
 })
